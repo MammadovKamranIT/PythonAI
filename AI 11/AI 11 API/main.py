@@ -68,4 +68,11 @@ async def predict (request: PredictInput):
     except Exception as e:
         traceback.print_exc()
         raise HTTPException(status_code=500, detail = "Nodel could not be loaded")
+
+
+
+@app.post("/retrain")
+async def retrain():
+    pass
+
         
